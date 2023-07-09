@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de responsibilidade</title>
+    <style>
+        :root {
+            --titulo01:#F2BE3F;
+            --cor02texto:#EB3118;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: #ffffff;
+            padding: 21px;
+            border-radius: 18px;
+            
+            min-width: 350px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        main > h1 {
+            text-align: center;
+            color: var(--titulo01);
+        }
+
+        main > p {
+            text-align: justify;
+            color: var(--cor02texto);
+            font-weight: bold;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1> teste de responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem recusandae similique ea. Quia quas, tempora, repellendus sequi praesentium porro aspernatur, consectetur labore iure dolor vitae perferendis quibusdam! Nostrum, explicabo accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores illo aperiam, eius repellat aliquam iste et perspiciatis facere maiores tenetur nulla amet laborum, iure consequatur ea hic sed obcaecati quos.</p>
+        <picture>
+            <source media="(min-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="irina blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate in ab similique tenetur magni laborum unde nemo quasi. Amet possimus, quos assumenda voluptate neque aut necessitatibus et adipisci inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis at quibusdam earum praesentium, nostrum mollitia voluptate perspiciatis magni natus. Vitae similique quod quo libero pariatur sapiente deserunt culpa dolor eaque.</p>
+    </main>
+</body>
+</html>

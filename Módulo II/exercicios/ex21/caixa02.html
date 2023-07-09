@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>groupings tags</title>
+    <style>
+        body{
+            background-color: dimgrey;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
+        header >h1{
+            text-align: center;
+            box-shadow: 2px 2px 10px 10px yellowgreen;
+        }
+
+        nav {
+            background-color: lightgray;
+            padding: 3px;
+        }
+
+        nav >a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav >a:hover{
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: dimgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: white;
+            text-align: center; 
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Meu Site</h1>
+       <nav>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+       </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politicas Noticias</p>
+        </section>
+        <section id="Noticias">
+            <article>
+                <h1>Noticias Sobre o Brasil</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maiores nulla laudantium quam tempore magnam, voluptates accusantium dolor dolore commodi officiis molestiae debitis veritatis placeat in aut iusto quasi eum.</p>
+                <aside>Artigo feito Por João Victor</aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site Desenvolvido Por João Victor</p>
+    </footer>
+    
+</body>
+</html>

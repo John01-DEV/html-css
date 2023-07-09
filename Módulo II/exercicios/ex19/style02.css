@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: yellow;
+}
+
+#novo {
+    color: yellow;
+    text-align: center;
+}
+
+.basico {
+    color: red;
+}
+
+.intermediario {
+    color: chartreuse;
+}
+
+.avançado {
+    color: honeydew;
+}
+
+p {
+    color: white;
+}

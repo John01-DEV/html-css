@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div escondida</title>
+    <style>
+        div>p {
+            display: none;
+        }
+
+        div:hover>p {
+            color: blue;
+            display: block;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>exemplo de hover</h1>
+    <p>passe o dedo sobre o texto</p>
+    <div>Passe o Mouse Aqui
+        <p>TEXTO ESCONDIDO ...</p>
+    </div>
+</body>
+
+</html>
