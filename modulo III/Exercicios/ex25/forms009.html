@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms output leitura de range</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="irange">Range: </label>
+            <input type="range" name="range" id="irange" oninput="isaida.innerHTML = Number(irange.value)">
+            <output id="isaida">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Campos">
+        </p>
+    </form>
+</body>
+</html>

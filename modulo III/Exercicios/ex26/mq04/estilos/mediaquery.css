@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* devices breakpoints*/
+
+/* pequenas telas: até 600px */
+/* celular: de 600px até 768px */
+/* Tablet: 768 até 992px */
+/* Desktop: 992px até 1200px */
+/* Grandes Telas: acima de 1200px */
+
+@media  print {
+    body {
+        background-image: url(../imagens/back-print.jpg); /*desnessesario*/
+        
+    }
+
+    main {
+        border: 5px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        text-align: center;
+        display: block;
+        margin: auto;
+        content: "SITE GERADO PARA O CURSO EM VIDEO";
+        text-decoration: overline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    main #tv {display: none;}
+    main #phone {display: none;} 
+    main #tablet{display: block;}
+    main #print {display: none;}
+    main #pc {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    main #tv {display: none;}
+    main #phone {display: none;} 
+    main #tablet{display: none;}
+    main #print {display: none;}
+    main #pc {display: block;}
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 40vw;
+    }
+
+    main #tv {display: block;}
+    main #phone {display: none;} 
+    main #tablet{display: none;}
+    main #print {display: none;}
+    main #pc {display: none;}
+}
+

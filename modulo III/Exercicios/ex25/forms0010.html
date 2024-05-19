@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output idade com javascript</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="iano">em que Ano você Nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1990" max="2024" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="inas">Sua Idade é? </label>
+            <output id="inas">0</output>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar Campos">
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            inas.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

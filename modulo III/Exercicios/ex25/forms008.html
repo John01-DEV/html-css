@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms output</title>
+</head>
+<body>
+
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inumero">Digite um Numero: </label>
+            <input type="number" name="numero" id="inumero" min="0" max="50" oninput="isoma.innerHTML= Number(inumero.value) + Number(inum1.value)">
+        </p>
+
+        <p>
+            <label for="inum1">Digite um Numero: </label>
+            <input type="number" name="num1" id="inum1" min="0" max="50" oninput="isoma.innerHTML= Number(inumero.value) + Number(inum1.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output id="isoma">0</output>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar Campos">
+    </form>
+</body>
+</html>

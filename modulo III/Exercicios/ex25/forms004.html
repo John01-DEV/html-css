@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms EMAIL e telefone</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Form Basico</legend>
+            <p>
+                 <label for="iname">Nome:</label>
+            <input type="text" name="name" id="iname" required placeholder="João Victor" autocomplete="name"></p>
+            <p>
+                 <label for="itel">Telefone: </label>
+            <input type="tel" name="tel" id="itel" placeholder="(xx) xxxxxxxx" required pattern="^\(\d{2}\)\d{2,5}-\d{4}$" autocomplete="tel"></p>
+            <p>
+                 <label for="iemail">Email: </label>
+            <input type="email" name="email" id="iemail" placeholder="seuemail@exemplo.com" required autocomplete="email"></p>
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar Campos">
+        </fieldset>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms03</title>
+</head>
+<body>
+    <h1>Teste de Forms 03</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iname">Nome: </label>
+        <input type="text" name="iiname" id="iname" required maxlength="50" placeholder="Nome Completo" autocomplete="name"></p>
+
+        <p><label for="imedia">Media: </label>
+        <input type="number" name="iinumber" id="imedia" min="0" max="10" step="0.5" required placeholder="0 a 10"></p>
+
+        <p>
+            <label for="imonth">Ano Letivo:  </label>
+            <input type="month" name="iimonth" id="imonth" required value="2024-04">
+        </p>
+
+        <p><label for="idate">Data:  </label>
+        <input type="date" name="iidate" id="idate"required></p>
+
+        <p><label for="itime">Horas: </label>
+        <input type="time" name="iitime" id="itime" required ></p>
+
+        <input type="submit" value="Enviar Dados">
+        <input type="reset" value="Limpar Todos Campos">
+    </form>
+</body>
+</html>

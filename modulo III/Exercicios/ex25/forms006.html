@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Color, range, file</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <p>
+                <label for="icolor">Color: </label>
+                <input type="color" name="color" id="icolor" value="#673AB7">
+            </p>
+
+            <p>
+                <label for="irange">
+                <input type="range" name="range" id="irange" min="1" max="10" value="5">
+                </label>
+            </p>
+
+            <p>
+                <label for="ifile">
+                    <input type="file" name="file" id="ifile">
+                </label>
+            </p>
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar campos">
+        </fieldset>
+    </form>
+</body>
+</html>

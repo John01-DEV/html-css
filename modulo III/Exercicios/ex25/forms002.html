@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 02</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="fnames">Nome:</label>
+            <input type="text" name="ffnames" id="fnames" required minlength="10" maxlength="30" size="10" placeholder="Digite um Nome de Usuario" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="fsenha">Senha: </label>
+            <input type="password" name="ffsenha" id="fsenha" required minlength="7" maxlength="30" size="10" placeholder="Digite uma Senha" autocomplete="current-password"></p>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar Campos">
+    </form>
+</body>
+</html>
